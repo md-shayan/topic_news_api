@@ -26,7 +26,7 @@ if NEW_DATE:
 if SOURCES:
     SOURCES = "sources=" + SOURCES + "&"
 
-URL = f"https://newsapi.org/v2/top-headlines?{QUERY}{OLD_DATE}{NEW_DATE}{SOURCES}sortBy=publishedAt&apiKey={API_KEY}" # The complete URL for the connection.
+URL = f"https://newsapi.org/v2/everything?{QUERY}{OLD_DATE}{NEW_DATE}{SOURCES}sortBy=publishedAt&apiKey={API_KEY}" # The complete URL for the connection.
 
 try:
     response = requests.get(URL)
